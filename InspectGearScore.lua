@@ -60,7 +60,6 @@ end
 
 local function UpdateCharacterFrame()
     UpdateFrame(CharacterFrame, "player", charIlvlText, charGsText)
-    FindFontStrings(CharacterFrame)
 end
 
 local function ClearInspectInfo()
