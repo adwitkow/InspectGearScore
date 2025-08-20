@@ -68,6 +68,10 @@ local function ClearInspectInfo()
 end
 
 local function InitializeInspect()
+    if inspectIlvlText and inspectGsText then
+        return
+    end
+
     inspectIlvlText = InspectFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     inspectIlvlText:SetPoint("TOPLEFT", InspectHeadSlot, "TOPLEFT", 0, 32)
 
@@ -86,6 +90,10 @@ local function InitializeInspect()
 end
 
 local function InitializePaperDoll()
+    if charIlvlText and charGsText then
+        return
+    end
+
     charIlvlText = CharacterFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     charIlvlText:SetPoint("TOP", CharacterLevelText, "BOTTOM", 0, -2)
 
